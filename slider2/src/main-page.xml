@@ -1,0 +1,55 @@
+<!--
+The markup in NativeScript apps contains a series of user interface components, each
+of which NativeScript renders with a platform-specific iOS or Android native control.
+You can find a full list of user interface components you can use in your app at
+https://docs.nativescript.org/ui/components.
+-->
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo">
+    <GridLayout rows="25,*" columns="">
+        <GridLayout backgroundColor="#0043a8" row="1" rows="auto,auto" columns="">
+            <Label row="0" text="Offer" color="white" class="p-10 h1" textWrap="true" />
+            <ActivityIndicator row="1" color="white" width="80" height="80" id="loading"  />
+        </GridLayout>
+        <GridLayout row="1" backgroundColor="white" class="box" rows="" id="drag" columns="">
+            <ScrollView pan="onPen" scroll="onScroll">
+                <StackLayout id="container" class="p-20">
+                    <GridLayout rows="200,auto" class="subBox" columns="">
+                        <Image row="0" src="~/Dubai.jpg" stretch="fill" />
+                        <StackLayout row="1" class="p-10">
+                            <Label text="Heading" class="h2" textWrap="true" />
+                            <Label text="subLadding" class="h4" textWrap="true" />
+                        </StackLayout>
+                    </GridLayout>
+                    <GridLayout rows="200,auto" class="subBox" columns="">
+                        <Image row="0" src="~/Dubai.jpg" stretch="fill" />
+                        <StackLayout row="1" class="p-10">
+                            <Label text="Heading" class="h2" textWrap="true" />
+                            <Label text="subLadding" class="h4" textWrap="true" />
+                        </StackLayout>
+                    </GridLayout>
+                    <GridLayout rows="200,auto" class="subBox" columns="">
+                        <Image row="0" src="~/Dubai.jpg" stretch="fill" />
+                        <StackLayout row="1" class="p-10">
+                            <Label text="Heading" class="h2" textWrap="true" />
+                            <Label text="subLadding" class="h4" textWrap="true" />
+                        </StackLayout>
+                    </GridLayout>
+                    <GridLayout rows="200,auto" class="subBox" columns="">
+                        <Image row="0" src="~/Dubai.jpg" stretch="fill" />
+                        <StackLayout row="1" class="p-10">
+                            <Label text="Heading" class="h2" textWrap="true" />
+                            <Label text="subLadding" class="h4" textWrap="true" />
+                        </StackLayout>
+                    </GridLayout>
+                    <GridLayout rows="200,auto" class="subBox" columns="">
+                        <Image row="0" src="~/Dubai.jpg" stretch="fill" />
+                        <StackLayout row="1" class="p-10">
+                            <Label text="Heading" class="h2" textWrap="true" />
+                            <Label text="subLadding" class="h4" textWrap="true" />
+                        </StackLayout>
+                    </GridLayout>
+                </StackLayout>
+            </ScrollView>
+        </GridLayout>
+    </GridLayout>
+</Page>
